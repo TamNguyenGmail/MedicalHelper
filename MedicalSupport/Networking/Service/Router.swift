@@ -25,6 +25,9 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
     private var task: URLSessionTask?
     
     //MARK: Features
+    func requestVer2(_ route: EndPoint) throws -> URLRequest {
+        return try self.buildRequest(from: route)
+    }
     func request(_ route: EndPoint) async throws -> (urlRequest: URLRequest?, data: Data?, response: URLResponse?, error: Error?) {
      
         let session = buildURLSession()
@@ -89,12 +92,9 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
     
     //MARK: Helpers
     fileprivate func buildURLSession() -> URLSession {
-        
         let config = URLSessionConfiguration.default
         config.timeoutIntervalForRequest = 5*60
-        
         let session = URLSession(configuration: config)
-        
         return session
     }
     
@@ -131,19 +131,6 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
                                              bodyEncoding: bodyEncoding,
                                              urlParameters: urlParameters,
                                              request: &request)
-                
-            case .uploadFile(let bodyParameters,
-                             let bodyEncoding,
-                             let additionHeaders,
-                             let media):
-                
-                guard let media = media else {throw NetworkError.parametersNil}
-
-                self.addAdditionalHeaders(additionHeaders, request: &request)
-                try self.configureParametersWithMeida(path: route.path,
-                                                      bodyParameters: bodyParameters,
-                                                      bodyEncoding: bodyEncoding,
-                                                      request: &request)
                 
             case .downloadFile:
                 

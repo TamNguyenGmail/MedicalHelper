@@ -22,6 +22,10 @@
 		E9A7AAE128FED952008F0AA9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7AAD428FED952008F0AA9 /* NetworkError.swift */; };
 		E9A7AAE228FED952008F0AA9 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7AAD528FED952008F0AA9 /* URLs.swift */; };
 		E9A7AAE528FEDA0F008F0AA9 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7AAE428FEDA0F008F0AA9 /* Media.swift */; };
+		E9A7AAE828FEE29B008F0AA9 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = E9A7AAE728FEE29B008F0AA9 /* RxBlocking */; };
+		E9A7AAEA28FEE29B008F0AA9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E9A7AAE928FEE29B008F0AA9 /* RxCocoa */; };
+		E9A7AAEC28FEE29B008F0AA9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = E9A7AAEB28FEE29B008F0AA9 /* RxRelay */; };
+		E9A7AAEE28FEE29B008F0AA9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E9A7AAED28FEE29B008F0AA9 /* RxSwift */; };
 		E9F0C31B28FD8B9F00D8CF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0C31A28FD8B9F00D8CF9D /* AppDelegate.swift */; };
 		E9F0C31D28FD8B9F00D8CF9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0C31C28FD8B9F00D8CF9D /* SceneDelegate.swift */; };
 		E9F0C31F28FD8B9F00D8CF9D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0C31E28FD8B9F00D8CF9D /* SignInViewController.swift */; };
@@ -61,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A7AAEC28FEE29B008F0AA9 /* RxRelay in Frameworks */,
+				E9A7AAEA28FEE29B008F0AA9 /* RxCocoa in Frameworks */,
+				E9A7AAEE28FEE29B008F0AA9 /* RxSwift in Frameworks */,
+				E9A7AAE828FEE29B008F0AA9 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +224,12 @@
 			dependencies = (
 			);
 			name = MedicalSupport;
+			packageProductDependencies = (
+				E9A7AAE728FEE29B008F0AA9 /* RxBlocking */,
+				E9A7AAE928FEE29B008F0AA9 /* RxCocoa */,
+				E9A7AAEB28FEE29B008F0AA9 /* RxRelay */,
+				E9A7AAED28FEE29B008F0AA9 /* RxSwift */,
+			);
 			productName = MedicalSupport;
 			productReference = E9F0C31728FD8B9F00D8CF9D /* MedicalSupport.app */;
 			productType = "com.apple.product-type.application";
@@ -244,6 +258,9 @@
 				Base,
 			);
 			mainGroup = E9F0C30E28FD8B9F00D8CF9D;
+			packageReferences = (
+				E9A7AAE628FEE29B008F0AA9 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = E9F0C31828FD8B9F00D8CF9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -506,6 +523,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9A7AAE628FEE29B008F0AA9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9A7AAE728FEE29B008F0AA9 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9A7AAE628FEE29B008F0AA9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		E9A7AAE928FEE29B008F0AA9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9A7AAE628FEE29B008F0AA9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E9A7AAEB28FEE29B008F0AA9 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9A7AAE628FEE29B008F0AA9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		E9A7AAED28FEE29B008F0AA9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9A7AAE628FEE29B008F0AA9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9F0C30F28FD8B9F00D8CF9D /* Project object */;
 }

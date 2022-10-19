@@ -7,6 +7,8 @@
 
 import UIKit
 import Combine
+import RxSwift
+import RxCocoa
 
 enum NetworkResponse:String {
     
@@ -33,6 +35,18 @@ class NetworkManager {
     @Published var byte = UInt8()
     
     //MARK: Features
+    public func callAPI<D: Codable>(caseEndPoint: BaseEnpoint) -> Observable<D> {
+        do {
+            let urlRequest = try self.router.requestVer2(caseEndPoint)
+            return URLSession.shared.rx.response(request: urlRequest).map { (response: HTTPURLResponse, data: Data) -> D in
+                return try JSONDecoder().decode(D.self, from: data)
+            }
+        } catch {
+            return Observable.empty()
+        }
+    }
+    
+    
     public func callAndParseAPI<D: Codable>(accordingTo caseEndPoint: BaseEnpoint, parseInto model: D.Type) async throws -> D? {
         
         let routerResponse = try await router.request(caseEndPoint)
@@ -144,6 +158,20 @@ class NetworkManager {
     }
         
     //MARK: Helpers
+    public func mapVer2<D: Codable>(from data: Data, to type: D.Type, decoder: JSONDecoder = JSONDecoder()) async throws -> D {
+        
+        do {
+            
+            return try decoder.decode(type, from: data)
+            
+        } catch(let error) {
+            
+            print(error.localizedDescription)
+            throw error
+            
+        }
+    }
+    
     public func map<D: Codable>(from data: Data, to type: D.Type, decoder: JSONDecoder = JSONDecoder()) async throws -> D {
 
         do {
