@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h54-Tq-8Wt">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XLI-ZQ-jmi">
-                                <rect key="frame" x="16" y="220" width="343" height="116"/>
+                                <rect key="frame" x="16" y="264" width="343" height="116"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A1f-nQ-2XA">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
@@ -35,13 +35,13 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_medical_company_logo" translatesAutoresizingMaskIntoConstraints="NO" id="rPm-CS-O72">
-                                <rect key="frame" x="16" y="0.0" width="343" height="200"/>
+                                <rect key="frame" x="16" y="44" width="343" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="6YU-Xz-jnl"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PaH-xn-PTA">
-                                <rect key="frame" x="16" y="356" width="343" height="43"/>
+                                <rect key="frame" x="16" y="400" width="343" height="43"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jr-Fh-vEz">
                                         <rect key="frame" x="0.0" y="0.0" width="161.5" height="43"/>
@@ -71,10 +71,35 @@
                             <constraint firstItem="XLI-ZQ-jmi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ip6-F0-S3e"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Sv5-bz-q8e"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="JrH-x3-3fu" id="GVj-C6-ed1"/>
+                        <outlet property="signInButton" destination="2jr-Fh-vEz" id="4XP-mH-dVE"/>
+                        <outlet property="signUpButton" destination="k00-2y-QKv" id="fpD-TB-Bvz"/>
+                        <outlet property="userNameTextField" destination="A1f-nQ-2XA" id="nwB-kW-0Pe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="82"/>
+            <point key="canvasLocation" x="959.20000000000005" y="81.409295352323838"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="koI-0Q-ukC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h54-Tq-8Wt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZzH-Px-lcA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TFW-8j-pg6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uDd-UN-31p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="81.409295352323838"/>
         </scene>
     </scenes>
     <resources>
