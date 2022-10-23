@@ -62,6 +62,14 @@
 		E9B122602903D05A00DFC69B /* SignInRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1225F2903D05A00DFC69B /* SignInRouterProtocol.swift */; };
 		E9B122622903D0F100DFC69B /* SignInViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B122612903D0F100DFC69B /* SignInViewProtocol.swift */; };
 		E9B122652903D48100DFC69B /* SignInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B122642903D48100DFC69B /* SignInBuilder.swift */; };
+		E9B122A52905231D00DFC69B /* SignUpPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B122982905231D00DFC69B /* SignUpPresenterProtocol.swift */; };
+		E9B122A62905231D00DFC69B /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B122992905231D00DFC69B /* SignUpPresenter.swift */; };
+		E9B122A72905231D00DFC69B /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1229B2905231D00DFC69B /* SignUpRouter.swift */; };
+		E9B122A82905231D00DFC69B /* SignUpRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1229C2905231D00DFC69B /* SignUpRouterProtocol.swift */; };
+		E9B122A92905231D00DFC69B /* SignUpBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1229E2905231D00DFC69B /* SignUpBuilder.swift */; };
+		E9B122AA2905231D00DFC69B /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B122A02905231D00DFC69B /* SignUpInteractor.swift */; };
+		E9B122AB2905231D00DFC69B /* SignUpInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B122A12905231D00DFC69B /* SignUpInteractorProtocol.swift */; };
+		E9B122AD2905231D00DFC69B /* SignUpViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B122A42905231D00DFC69B /* SignUpViewProtocol.swift */; };
 		E9F0C31B28FD8B9F00D8CF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0C31A28FD8B9F00D8CF9D /* AppDelegate.swift */; };
 		E9F0C31D28FD8B9F00D8CF9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0C31C28FD8B9F00D8CF9D /* SceneDelegate.swift */; };
 		E9F0C31F28FD8B9F00D8CF9D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0C31E28FD8B9F00D8CF9D /* SignInViewController.swift */; };
@@ -95,6 +103,14 @@
 		E9B1225F2903D05A00DFC69B /* SignInRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouterProtocol.swift; sourceTree = "<group>"; };
 		E9B122612903D0F100DFC69B /* SignInViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewProtocol.swift; sourceTree = "<group>"; };
 		E9B122642903D48100DFC69B /* SignInBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInBuilder.swift; sourceTree = "<group>"; };
+		E9B122982905231D00DFC69B /* SignUpPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPresenterProtocol.swift; sourceTree = "<group>"; };
+		E9B122992905231D00DFC69B /* SignUpPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		E9B1229B2905231D00DFC69B /* SignUpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		E9B1229C2905231D00DFC69B /* SignUpRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpRouterProtocol.swift; sourceTree = "<group>"; };
+		E9B1229E2905231D00DFC69B /* SignUpBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpBuilder.swift; sourceTree = "<group>"; };
+		E9B122A02905231D00DFC69B /* SignUpInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		E9B122A12905231D00DFC69B /* SignUpInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInteractorProtocol.swift; sourceTree = "<group>"; };
+		E9B122A42905231D00DFC69B /* SignUpViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewProtocol.swift; sourceTree = "<group>"; };
 		E9F0C31728FD8B9F00D8CF9D /* MedicalSupport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalSupport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F0C31A28FD8B9F00D8CF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F0C31C28FD8B9F00D8CF9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,8 +187,11 @@
 		E954043828FD93AE0027377F /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				E954043928FD93DC0027377F /* SignUpViewController.swift */,
-				E954043A28FD93DC0027377F /* SignUpViewController.xib */,
+				E9B1229D2905231D00DFC69B /* Builder */,
+				E9B1229F2905231D00DFC69B /* Interactor */,
+				E9B122972905231D00DFC69B /* Presenter */,
+				E9B1229A2905231D00DFC69B /* Router */,
+				E9B122A22905231D00DFC69B /* View */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -287,6 +306,51 @@
 				E9B122642903D48100DFC69B /* SignInBuilder.swift */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		E9B122972905231D00DFC69B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E9B122982905231D00DFC69B /* SignUpPresenterProtocol.swift */,
+				E9B122992905231D00DFC69B /* SignUpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E9B1229A2905231D00DFC69B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E9B1229B2905231D00DFC69B /* SignUpRouter.swift */,
+				E9B1229C2905231D00DFC69B /* SignUpRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E9B1229D2905231D00DFC69B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				E9B1229E2905231D00DFC69B /* SignUpBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		E9B1229F2905231D00DFC69B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E9B122A02905231D00DFC69B /* SignUpInteractor.swift */,
+				E9B122A12905231D00DFC69B /* SignUpInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E9B122A22905231D00DFC69B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9B122A42905231D00DFC69B /* SignUpViewProtocol.swift */,
+				E954043928FD93DC0027377F /* SignUpViewController.swift */,
+				E954043A28FD93DC0027377F /* SignUpViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E9F0C30E28FD8B9F00D8CF9D = {
@@ -448,19 +512,27 @@
 				E9B122602903D05A00DFC69B /* SignInRouterProtocol.swift in Sources */,
 				E9B1225E2903D04000DFC69B /* SignInRouter.swift in Sources */,
 				E9A7AAD728FED952008F0AA9 /* URLParameterEncoder.swift in Sources */,
+				E9B122A62905231D00DFC69B /* SignUpPresenter.swift in Sources */,
+				E9B122A82905231D00DFC69B /* SignUpRouterProtocol.swift in Sources */,
+				E9B122A92905231D00DFC69B /* SignUpBuilder.swift in Sources */,
 				E9A7AAD628FED952008F0AA9 /* ParameterEncoding.swift in Sources */,
 				E9A7AAD928FED952008F0AA9 /* NetworkManager.swift in Sources */,
 				E954043B28FD93DC0027377F /* SignUpViewController.swift in Sources */,
 				E9A7AAE028FED952008F0AA9 /* EndPointType.swift in Sources */,
 				E9A7AADC28FED952008F0AA9 /* HTTPTask.swift in Sources */,
 				E9A7AADD28FED952008F0AA9 /* HTTPMethod.swift in Sources */,
+				E9B122A72905231D00DFC69B /* SignUpRouter.swift in Sources */,
 				E9B1225A2903CD6900DFC69B /* SignInInteractor.swift in Sources */,
 				E9B122622903D0F100DFC69B /* SignInViewProtocol.swift in Sources */,
 				E9B122562903CCDF00DFC69B /* SignInPresenter.swift in Sources */,
 				E9A7AAD828FED952008F0AA9 /* JSONParameterEncoder.swift in Sources */,
 				E9A7AAE528FEDA0F008F0AA9 /* Media.swift in Sources */,
+				E9B122AA2905231D00DFC69B /* SignUpInteractor.swift in Sources */,
+				E9B122A52905231D00DFC69B /* SignUpPresenterProtocol.swift in Sources */,
 				E9A7AADA28FED952008F0AA9 /* NetworkMonitor.swift in Sources */,
 				E9B122652903D48100DFC69B /* SignInBuilder.swift in Sources */,
+				E9B122AB2905231D00DFC69B /* SignUpInteractorProtocol.swift in Sources */,
+				E9B122AD2905231D00DFC69B /* SignUpViewProtocol.swift in Sources */,
 				E9F0C31D28FD8B9F00D8CF9D /* SceneDelegate.swift in Sources */,
 				E9B1225C2903D00600DFC69B /* SignInInteractorProtocol.swift in Sources */,
 				E9A7AADE28FED952008F0AA9 /* Router.swift in Sources */,

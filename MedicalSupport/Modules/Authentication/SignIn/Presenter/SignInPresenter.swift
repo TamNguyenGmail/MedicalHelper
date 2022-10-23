@@ -21,6 +21,12 @@ class SignInPresenter: SignInPresenterProtocol {
     func inputText(text: String) {
         print(text)
     }
+    
+    func handleTapSignUpButton() {
+        guard let router = self.router else { return }
+        router.openSignUpModule()
+    }
+    
 }
 
 // MARK: - SignInInteractorOutputprotocol

@@ -50,8 +50,8 @@ class SignInViewController: UIViewController {
         }.disposed(by: self.disposeBag)
         
         self.signUpButton.rx.tap.subscribe { [weak self] _ in
-            guard let this = self else { return }
-            this.userNameTextField.text = nil
+            guard let this = self, let presenter = this.presenter else { return }
+            presenter.handleTapSignUpButton()
         }.disposed(by: self.disposeBag)
 
     }

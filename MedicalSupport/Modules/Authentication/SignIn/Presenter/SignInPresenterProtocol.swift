@@ -12,4 +12,5 @@ protocol SignInPresenterProtocol {
     // MARK: - Functions
     func viewDidLoad()
     func inputText(text: String)
+    func handleTapSignUpButton()
 }
