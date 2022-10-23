@@ -34,6 +34,8 @@
 		E90D379929016F400063ADFE /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E90D379829016F400063ADFE /* FirebaseRemoteConfigSwift */; };
 		E90D379B29016F400063ADFE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E90D379A29016F400063ADFE /* FirebaseStorage */; };
 		E90D379D29016F400063ADFE /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E90D379C29016F400063ADFE /* FirebaseStorageCombine-Community */; };
+		E91E875B29053C150051BFD3 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E91E875A29053C150051BFD3 /* GoogleSignIn */; };
+		E91E875D29053C150051BFD3 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E91E875C29053C150051BFD3 /* GoogleSignInSwift */; };
 		E954043B28FD93DC0027377F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E954043928FD93DC0027377F /* SignUpViewController.swift */; };
 		E954043C28FD93DC0027377F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E954043A28FD93DC0027377F /* SignUpViewController.xib */; };
 		E9671C3429053A8B00F4CBF5 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = E9671C3329053A8B00F4CBF5 /* FacebookCore */; };
@@ -149,12 +151,14 @@
 				E90D376D29016F400063ADFE /* FirebaseAnalyticsSwift in Frameworks */,
 				E90D376929016F400063ADFE /* FirebaseAnalytics in Frameworks */,
 				E9A7AAE828FEE29B008F0AA9 /* RxBlocking in Frameworks */,
+				E91E875B29053C150051BFD3 /* GoogleSignIn in Frameworks */,
 				E90D377729016F400063ADFE /* FirebaseAuthCombine-Community in Frameworks */,
 				E90D377529016F400063ADFE /* FirebaseAuth in Frameworks */,
 				E90D378929016F400063ADFE /* FirebaseFunctionsCombine-Community in Frameworks */,
 				E90D377929016F400063ADFE /* FirebaseCrashlytics in Frameworks */,
 				E90D377F29016F400063ADFE /* FirebaseDynamicLinks in Frameworks */,
 				E90D379B29016F400063ADFE /* FirebaseStorage in Frameworks */,
+				E91E875D29053C150051BFD3 /* GoogleSignInSwift in Frameworks */,
 				E90D378B29016F400063ADFE /* FirebaseInAppMessaging-Beta in Frameworks */,
 				E90D379929016F400063ADFE /* FirebaseRemoteConfigSwift in Frameworks */,
 				E9671C3829053A8B00F4CBF5 /* FacebookShare in Frameworks */,
@@ -450,6 +454,8 @@
 				E9671C3329053A8B00F4CBF5 /* FacebookCore */,
 				E9671C3529053A8B00F4CBF5 /* FacebookLogin */,
 				E9671C3729053A8B00F4CBF5 /* FacebookShare */,
+				E91E875A29053C150051BFD3 /* GoogleSignIn */,
+				E91E875C29053C150051BFD3 /* GoogleSignInSwift */,
 			);
 			productName = MedicalSupport;
 			productReference = E9F0C31728FD8B9F00D8CF9D /* MedicalSupport.app */;
@@ -483,6 +489,7 @@
 				E9A7AAE628FEE29B008F0AA9 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				E90D376729016F400063ADFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				E9671C3229053A8B00F4CBF5 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				E91E875929053C150051BFD3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = E9F0C31828FD8B9F00D8CF9D /* Products */;
 			projectDirPath = "";
@@ -773,6 +780,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		E91E875929053C150051BFD3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		E9671C3229053A8B00F4CBF5 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
@@ -926,6 +941,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E90D376729016F400063ADFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		E91E875A29053C150051BFD3 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E91E875929053C150051BFD3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		E91E875C29053C150051BFD3 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E91E875929053C150051BFD3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 		E9671C3329053A8B00F4CBF5 /* FacebookCore */ = {
 			isa = XCSwiftPackageProductDependency;
